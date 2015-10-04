@@ -1,0 +1,35 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.enableLocation">
+        Enable Location
+    </ion-toggle>
+    </ion-list>
+    <ion-list>
+    <button class="button button-energized" ng-click="addImage()">
+   Add image
+  </button><br><br>
+   </ion-list>
+  <ion-list>
+  <ion-scroll>
+   <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" height="200px"/>
+  </ion-scroll>
+   </ion-list>
+   	<ion-list>
+   	<label class="item item-input">
+	  <span class="input-label">Name</span>
+	<input type="text">
+	</ion-list>
+   <ion-list>
+   	<label class="item item-input">
+	  <span class="input-label">Email</span>
+	<input type="email">
+	</ion-list>
+	<ion-list>
+   	<label class="item item-input">
+	  <span class="input-label">Registration Number</span>
+	<input type="text">
+	</ion-list>
+</label
+  </ion-content>
+</ion-view>
